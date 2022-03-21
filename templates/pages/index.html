@@ -1,0 +1,16 @@
+<!--index.html-->
+
+<!-- header -->
+{{ template "header.html" .}}
+<section>
+    {{ range .payload }}
+    <div class="frontpage">
+        <a href="/view/{{.ID}}">
+            <h2>{{.Title}}</h2>
+        </a>
+        <span style="float:left;max-width: 90%;"><h4>{{.Descr}}</h4></span><span class="badge" style="text-align: right;">123</span>
+    </div>
+    {{ end }}
+</section>
+<!-- footer -->
+{{ template "footer.html" .}}

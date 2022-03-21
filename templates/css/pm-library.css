@@ -1,0 +1,195 @@
+body {
+    background: #cccccc;
+    background-size: cover;
+    font-size: 0.85em;
+    font-weight: 400;
+    line-height: 18px;
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+    margin-top: 5px;
+}
+
+aside,
+footer,
+header,
+nav,
+section {
+    display: block;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #414141;
+    border: 1px solid #000;
+    max-width: 80%;
+    position: relative;
+    padding: 0px;
+}
+
+header {
+    clear: both;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    display: block;
+    min-height: 60px;
+}
+
+.headleft {
+    float: left;
+}
+
+.headright {
+    float: right;
+    cursor: pointer;
+}
+
+.headcenter {
+    float: none;
+    margin: auto;
+    text-align: center;
+    height: 60px;
+    display: table;
+}
+
+section {
+    border-radius: 5px;
+    clear: both;
+    background-color: #fff;
+}
+
+.frontpage {
+    border-bottom: 1px solid black;
+    max-width: 100%;
+    min-height: 50px;
+    max-height: max-content;
+}
+
+.hicon {
+    text-shadow: 2px 2px 2px black;
+    color: lightgray;
+    text-align: center;
+    display: inline-block;
+    margin: 0 2px;
+}
+
+.hicon64 {
+    font-size: 36px;
+    line-height: 60px;
+    width: 70px;
+    height: 60px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+.fa,
+.fas {
+    font-family: Font Awesome 6 Free;
+    font-weight: 900;
+}
+
+header h1 {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 100%;
+    font-size: 1.9em;
+}
+
+footer {
+    color: white;
+    border-radius: 0px 0px 10px 10px;
+    clear: both;
+    color: white;
+    height: 40px;
+}
+
+.footleft {
+    float: left;
+    height: 40px;
+}
+
+.footcenter {
+    float: none;
+    margin: auto;
+    text-align: center;
+    height: 40px;
+    display: table;
+}
+
+.footright {
+    float: right;
+    height: 40px;
+}
+
+footer p {
+    vertical-align: middle;
+}
+
+.fa,
+.fab,
+.fal,
+.far,
+.fas {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+
+.frontpage h2 {
+    padding: 5px 0 0 5px;
+}
+
+h2 {
+    font-size: 1.2em;
+}
+
+.frontpage h4 {
+    padding: 5px 0 5px 20px;
+    font-style: italic;
+    overflow-wrap: break-word;
+}
+
+h4 {
+    font-size: 1.0em;
+}
+
+.fa-2x {
+    font-size: 2em;
+}
+
+.hicon32 {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 4px;
+}
+
+a {
+    color: #000066;
+    font-weight: 800;
+}
+
+.badge {
+    margin-right: 8px;
+    margin-top: -2px;
+    font-size: 12px;
+    vertical-align: top;
+    background-color: #777;
+    border-radius: 10px;
+    text-align: right;
+    float: right;
+    box-shadow: 2px 2px 2px black;
+}
