@@ -2,22 +2,16 @@ package startpage
 
 import (
 	"pm-go-library/common"
+	"pm-go-library/models/mainpageModel"
 
 	"github.com/gin-gonic/gin"
 )
 
-type Item struct {
-	ID    string `json:"id"`
-	Title string `json:"title"`
-	Descr string `json:"dedcr"`
-	Count int    `json:"count"`
-}
-
-var ItemList = []Item{
-	{ID: "authors", Title: "Авторы", Descr: "Список авторов в алфавитном порядке"},
-	{ID: "series", Title: "Серии", Descr: "Список серий в алфавитном порядке"},
-	{ID: "publishHouses", Title: "Издательства", Descr: "Список издательств в алфавитном порядке"},
-	{ID: "genres", Title: "Жанры", Descr: "Список жанров в алфавитном порядке"},
+var ItemList = []mainpageModel.Item{
+	{ID: "authors1", Title: "Авторы", Descr: "Список авторов в алфавитном порядке", Count: 10},
+	{ID: "series", Title: "Серии", Descr: "Список серий в алфавитном порядке", Count: 12},
+	{ID: "publishHouses", Title: "Издательства", Descr: "Список издательств в алфавитном порядке", Count: 3},
+	{ID: "genres", Title: "Жанры", Descr: "Список жанров в алфавитном порядке", Count: 5},
 }
 
 func ShowIndexPage(c *gin.Context) {
