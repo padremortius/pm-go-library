@@ -18,7 +18,7 @@ func ShowFFCLPage(c *gin.Context) {
 	common.Render(
 		c,
 		gin.H{
-			"title":   "PM-Go-Library",
+			"title":   "PM-Go-Library: Авторы",
 			"payload": FamilyFirstCharList,
 		}, "authors1.html",
 	)
