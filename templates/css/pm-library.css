@@ -238,4 +238,22 @@ a {
 }
 
 
-/* ======end*/
+/* ======end*=========/
+
+
+/* =====begin for series1.html */
+
+.series1-ffc-col {
+    margin-left: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    min-width: 200px;
+    min-height: 1px;
+    float: left;
+    position: relative;
+    width: max-content;
+    padding-right: 10px;
+}
+
+
+/* ======end=======*/
