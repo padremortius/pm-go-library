@@ -2,6 +2,7 @@ package routes
 
 import (
 	"pm-go-library/view/aboutpage"
+	"pm-go-library/view/authorspage"
 	"pm-go-library/view/startpage"
 
 	"github.com/gin-gonic/gin"
@@ -13,4 +14,5 @@ func InitializeRoutes() {
 	// Handle the index route
 	Router.GET("/", startpage.ShowIndexPage)
 	Router.GET("/info", aboutpage.ShowAboutPage)
+	Router.GET("/authors1", authorspage.ShowFFCLPage)
 }

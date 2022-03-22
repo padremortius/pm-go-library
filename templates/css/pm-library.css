@@ -193,3 +193,48 @@ a {
     float: right;
     box-shadow: 2px 2px 2px black;
 }
+
+
+/* =====begin for authors1.html */
+
+.authors1-ffc-col {
+    margin-left: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    min-width: 200px;
+    min-height: 1px;
+    float: left;
+    position: relative;
+    width: max-content;
+}
+
+.panel-title {
+    font-size: 16px;
+    color: inherit;
+    border: 1px solid #ddd;
+    height: fit-content;
+    padding-bottom: 10px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    width: 100%;
+    text-align: justify;
+    vertical-align: middle;
+    padding-left: 10px;
+    padding-top: 3px;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+.panel-body {
+    border: 1px solid #ddd;
+    border-top: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    min-height: 30px;
+    height: max-content;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+
+/* ======end*/
