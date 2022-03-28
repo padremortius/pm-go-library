@@ -1,0 +1,21 @@
+<!--publishers.html-->
+
+<!-- header -->
+{{ template "header.html" .}}
+<section>
+    <div class="row">
+
+        {{ range .payload }}
+        <div class="publishers-ffc-col">
+            <div class="panel-title">
+                <h2><a href="/" style="display: block;">{{ .FirstChar }}</a></h2>
+            </div>
+            <div class="panel-body">
+                <span class="badge" style="text-align: right;">{{ .PublishersCount }}</span>
+            </div>
+        </div>
+        {{ end }}
+
+</section>
+<!-- footer -->
+{{ template "footer.html" .}}

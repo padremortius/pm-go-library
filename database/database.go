@@ -3,6 +3,7 @@ package database
 import (
 	"pm-go-library/models/authorsModel"
 	"pm-go-library/models/genresModel"
+	"pm-go-library/models/publishersModel"
 	"pm-go-library/models/seriesModel"
 
 	"gorm.io/driver/sqlite"
@@ -48,6 +49,13 @@ func FillGBCListByQuery() genresModel.GBCList {
 func FillFirstCharOfAuthorsWithCount() authorsModel.AuthorLastNameFCList {
 	sqlQuery1 := "select SUBSTRING(sort, 1, 1) as FirstChar, count(*) as AuthorsCount from authors a group by FirstChar"
 	var data authorsModel.AuthorLastNameFCList
+	My_db.Raw(sqlQuery1).Scan(&data)
+	return data
+}
+
+func FillFirstCharOfPublishersWithCount() publishersModel.PFCList {
+	sqlQuery1 := "select SUBSTRING(name, 1, 1) as FirstChar, count(*) as PublishersCount from publishers a group by FirstChar"
+	var data publishersModel.PFCList
 	My_db.Raw(sqlQuery1).Scan(&data)
 	return data
 }

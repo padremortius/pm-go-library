@@ -237,13 +237,7 @@ a {
     border-bottom-right-radius: 4px;
 }
 
-
-/* ======end*=========/
-
-
-/* =====begin for series1.html */
-
-.series1-ffc-col {
+.series1-ffc-col .publishers-ffc-col {
     margin-left: 10px;
     margin-bottom: 20px;
     margin-top: 20px;
