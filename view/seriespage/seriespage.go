@@ -2,23 +2,20 @@ package seriespage
 
 import (
 	"pm-go-library/common"
-	"pm-go-library/models/seriesModel"
+	"pm-go-library/database"
 
 	"github.com/gin-gonic/gin"
 )
 
-var seriesList = []seriesModel.SeriesList{
-	{FirstChar: "Хроники Амбера", Count: 25},
-	{FirstChar: "O'Reily", Count: 10},
-	{FirstChar: "ЖЗЛ", Count: 2},
-}
+var ()
 
 func ShowSeriesPage(c *gin.Context) {
+	s := database.FillSBCListByQuery()
 	common.Render(
 		c,
 		gin.H{
 			"title":   "PM-Go-Library: Серии",
-			"payload": seriesList,
+			"payload": s,
 		}, "series1.html",
 	)
 }

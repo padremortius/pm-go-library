@@ -8,10 +8,10 @@
         {{ range .payload }}
         <div class="series1-ffc-col">
             <div class="panel-title">
-                <h2><a href="/" style="display: block;">{{ .FirstChar }}</a></h2>
+                <h2><a href="/" style="display: block;">{{ .Name }}</a></h2>
             </div>
             <div class="panel-body">
-                <span class="badge" style="text-align: right;">{{ .Count }}</span>
+                <span class="badge" style="text-align: right;">{{ .CountBooks }}</span>
             </div>
         </div>
         {{ end }}
