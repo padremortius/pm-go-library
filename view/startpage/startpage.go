@@ -13,9 +13,9 @@ func FillItemStartPage() mainpageModel.StartPageList {
 	var itemList mainpageModel.StartPageList
 
 	itemList = append(itemList, mainpageModel.Item{
-		ID: "authors1", Title: "Авторы", Descr: "Список авторов в алфавитном порядке", Count: database.GetRecCountInTable("authors")})
+		ID: "authors", Title: "Авторы", Descr: "Список авторов в алфавитном порядке", Count: database.GetRecCountInTable("authors")})
 	itemList = append(itemList, mainpageModel.Item{
-		ID: "series1", Title: "Серии", Descr: "Список серий в алфавитном порядке", Count: database.GetRecCountInTable("series")})
+		ID: "series", Title: "Серии", Descr: "Список серий в алфавитном порядке", Count: database.GetRecCountInTable("series")})
 	itemList = append(itemList, mainpageModel.Item{
 		ID: "publishers", Title: "Издательства", Descr: "Список издательств в алфавитном порядке", Count: database.GetRecCountInTable("publishers")})
 	itemList = append(itemList, mainpageModel.Item{

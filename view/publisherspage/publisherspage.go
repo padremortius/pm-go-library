@@ -8,12 +8,13 @@ import (
 )
 
 func ShowPFCLPage(c *gin.Context) {
-	s := database.FillFirstCharOfPublishersWithCount()
+	s := database.FillPublishersWithCount()
 	common.Render(
 		c,
 		gin.H{
 			"title":   "PM-Go-Library: Издательства",
 			"payload": s,
-		}, "publishers.html",
+		},
+		"publishers.html",
 	)
 }

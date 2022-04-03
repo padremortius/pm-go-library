@@ -1,21 +1,20 @@
-<!--series1.html-->
+<!--authors1.html-->
 
 <!-- header -->
 {{ template "header.html" .}}
 <section>
     <div class="row">
-
         {{ range .payload }}
-        <div class="series1-ffc-col">
+        <div class="authors1-ffc-col">
             <div class="panel-title">
-                <h2><a href="/" style="display: block;">{{ .Name }}</a></h2>
+                <h2><a href="/booksByFCL?AutorsFirstLetter={{ .FirstChar }}" style="display: block;">{{ .FirstChar }}</a></h2>
             </div>
             <div class="panel-body">
-                <span class="badge" style="text-align: right;">{{ .CountBooks }}</span>
+                <span class="badge" style="text-align: right;">{{ .AuthorsCount }}</span>
             </div>
         </div>
         {{ end }}
-
+    </div>
 </section>
 <!-- footer -->
 {{ template "footer.html" .}}

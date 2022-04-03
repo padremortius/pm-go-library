@@ -9,10 +9,11 @@ type (
 	GenreList []Genre
 
 	//type GenreList with books count
-	GBCItem struct {
-		Name       string `json:"name"`
+	GenreItem struct {
+		GenreId    int    `json:"genreid"`
+		GenreName  string `json:"genrename"`
 		CountBooks int    `json:"countbooks"`
 	}
 
-	GBCList []GBCItem
+	GenresList []GenreItem
 )

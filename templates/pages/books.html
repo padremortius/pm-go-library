@@ -1,0 +1,32 @@
+<!--booksauthors.html-->
+
+<!-- header -->
+{{ template "header.html" .}}
+<section>
+    <div class="booksauthors-ffc-col">
+        <div class="row">
+            <div class="col-lg-1 col-sm-1 numCol">
+                <h2>#</h2>
+            </div>
+            <div class="col-lg-3 col-sm-3 authorCol">
+                <h2>ФИО автора</h2>
+            </div>
+            <div class="col-lg-7 col-sm-7 titleCol">
+                <h2>Наименование книги</h2>
+            </div>
+            <div class="col-lg-1 col-sm-1 dateCol">
+                <h2>Дата</h2>
+            </div>
+        </div>
+        {{ range .payload }}
+        <div class="row">
+            <div class="col-lg-1 col-sm-1 numCol">{{ .Num }}</div>
+            <div class="col-lg-3 col-sm-3 authorCol">{{ .AuthorName}}</div>
+            <div class="col-lg-7 col-sm-7 titleCol">{{ .BookTitle }}</div>
+            <div class="col-lg-1 col-sm-1 dateCol">{{ .PubDate }}</div>
+        </div>
+        {{ end }}
+    </div>
+</section>
+<!-- footer -->
+{{ template "footer.html" .}}

@@ -9,10 +9,11 @@ type (
 
 	PublisherList []Publisher
 
-	PFCItem struct {
-		FirstChar       string `json:"firstchar"`
+	PublisherItem struct {
+		PublisherId     int    `json:"publisherid"`
+		PublisherName   string `json:"publishername"`
 		PublishersCount int64  `json:"publisherscount"`
 	}
 
-	PFCList []PFCItem
+	PublishersList []PublisherItem
 )

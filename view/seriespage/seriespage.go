@@ -16,6 +16,7 @@ func ShowSeriesPage(c *gin.Context) {
 		gin.H{
 			"title":   "PM-Go-Library: Серии",
 			"payload": s,
-		}, "series1.html",
+		},
+		"series.html",
 	)
 }

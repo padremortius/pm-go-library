@@ -14,6 +14,6 @@ func ShowFFCLPage(c *gin.Context) {
 		gin.H{
 			"title":   "PM-Go-Library: Авторы",
 			"payload": s,
-		}, "authors1.html",
+		}, "authors.html",
 	)
 }

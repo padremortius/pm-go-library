@@ -8,7 +8,7 @@ import (
 )
 
 func ShowGenresPage(c *gin.Context) {
-	s := database.FillGBCListByQuery()
+	s := database.FillGenreListByQuery()
 	common.Render(
 		c,
 		gin.H{

@@ -12,6 +12,7 @@ type (
 
 	//type SeriesList with books count
 	SBCItem struct {
+		SerieId    int    `json:"serieid"`
 		Name       string `json:"name"`
 		CountBooks int    `json:"countbooks"`
 	}
